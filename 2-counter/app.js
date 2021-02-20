@@ -25,9 +25,14 @@ btns.forEach(function (btn) {
       //count--;
       value.textContent = addMadLibs()
     } else if (styles.contains("increase")) {
+<<<<<<< HEAD
       //count *= 2;
       // count = count * 2
       value.textContent = addMadLibs()
+=======
+      count *= 2;
+      // count = count * 2
+>>>>>>> 872b5812c964e5594f44efe31294acb030d5ab1e
     } else {
       value.textContent = ""
 
