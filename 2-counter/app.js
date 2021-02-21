@@ -4,11 +4,17 @@ let count = 2;
 const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
 
+const companies = ["Uber", "Lyft", "Google", "Apple", "SpaceX", "Tinder"]
+const animals = ["Aardvark", "Blue Footed Booby", "Flying Dragon", "Giraffe Weevil", "Hammerhead Slug", "Komodo Dragon", "Naked Mole Rat", "Okapi", "Red Panda"]
+const vowels = ["A", "E", "I", "O", "U"]
+
 console.log(btns)
 
 // for (let i = 0; i < btns.length; i++) {
 //   // btn.addEventListener()
 // }
+
+
 function addMadLibs(){
   const companyName = companies[Math.floor(Math.random() * companies.length)]
   const firstLetter = companyName.charAt(0)
@@ -25,14 +31,9 @@ btns.forEach(function (btn) {
       //count--;
       value.textContent = addMadLibs()
     } else if (styles.contains("increase")) {
-<<<<<<< HEAD
       //count *= 2;
       // count = count * 2
       value.textContent = addMadLibs()
-=======
-      count *= 2;
-      // count = count * 2
->>>>>>> 872b5812c964e5594f44efe31294acb030d5ab1e
     } else {
       value.textContent = ""
 
